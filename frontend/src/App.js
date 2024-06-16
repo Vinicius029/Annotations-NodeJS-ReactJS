@@ -7,6 +7,7 @@ import "./styles/siderbar.css";
 import "./styles/app.css";
 import "./styles/main.css";
 import Notes from './Components/Notes';
+import RadioButton from './Components/RadioButton';
 
 function App() {
 
@@ -74,16 +75,13 @@ function App() {
           </div>
           <button id='btn_submit' type="submit">Enviar</button>
         </form>
+
+        < RadioButton />
+
       </aside>
 
       <main>
         <ul>
-          {/* {
-            allNotes.forEach((data) => {
-              console.log(data)
-            })
-          } */}
-          
           {allNotes.map(data => (<Notes data={data}/>))}
         </ul>
       </main>
